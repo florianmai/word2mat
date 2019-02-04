@@ -1,0 +1,14 @@
+networkx==1.11
+sklearn
+numpy
+scipy
+torch
+torchtext
+bayesian-optimization
+hyperopt
+nltk
+pandas
+
+
+
+
