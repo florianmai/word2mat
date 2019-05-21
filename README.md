@@ -43,17 +43,23 @@ Therefore, CBOW is superior in almost all downstream tasks except TREC.
 The Hybrid model retains the capabilities of both models and therefore is extremely close to the better model among CBOW and CMOW, or better
 on all tasks.
 
+Probing tasks: All scores denote accuracy.
+
 | Model |  Depth|  BigramShift|  SubjNumber|  Tense|  CoordinationInversion|  Length|  ObjNumber|  TopConstituents|  OddManOut|  WordContent|
 |:----------|------:|------------:|-----------:|------:|----------------------:|-------:|----------:|----------------:|----------:|------------:|
 | CBOW      |  32.73|        49.65|       79.65|  79.46|                  53.78|   75.69|      79.00|            72.26|      49.64|        89.11|
 | CMOW      |  34.40|        72.44|       82.08|  80.32|                  62.05|   82.93|      79.70|            74.25|      51.33|        65.15|
 | Hybrid    |  35.38|        71.22|       81.45|  80.83|                  59.17|   87.00|      79.37|            72.88|      50.53|        86.97|
 
+Supervised downstream tasks: For STS-Benchmark and Sick-Relatedness, the results denote Spearman correlation coefficient. For all others the score denotes accuracy.
+
 | Model |   SNLI|   SUBJ|     CR|     MR|   MPQA|  TREC|  SICKEntailment|   SST2|   SST5|   MRPC|  STSBenchmark|  SICKRelatedness|
 |:----------|------:|------:|------:|------:|------:|-----:|---------------:|------:|------:|------:|-------------:|----------------:|
 | CBOW      |  67.76|  90.45|  79.76|  74.32|  87.23|  84.4|           79.58|  78.14|  41.72|  72.17|         0.619|            0.721|
 | CMOW      |  64.77|  87.11|  74.60|  71.42|  87.55|  88.0|           76.90|  76.77|  40.18|  70.61|         0.576|            0.705|
 | Hybrid    |  67.59|  90.26|  79.60|  74.10|  87.38|  89.2|           78.69|  77.87|  41.58|  71.94|         0.613|            0.718|
+
+Unsupervised downstream tasks: The score denotes Spearman correlation coefficient.
 
 | Model |  STS12|  STS13|  STS14|  STS15|  STS16|
 |:----------|------:|------:|------:|------:|------:|
